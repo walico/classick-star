@@ -100,6 +100,32 @@ html { scroll-behavior: smooth; }
 #faq details summary::-webkit-details-marker { display: none; }
 #faq details summary::marker { content: none; }
 
+/* Services accordion: hide marker, + / × toggle */
+.services-accordion details summary::-webkit-details-marker { display: none; }
+.services-accordion details summary::marker { content: none; }
+.services-accordion details summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.services-accordion details summary span {
+  flex: 1;
+  min-width: 0;
+}
+.services-accordion details summary::after {
+  content: '+';
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #1A3638;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.services-accordion details[open] summary::after {
+  content: '×';
+}
+
 /* Testimonials infinite slider */
 .testimonials-slider {
   overflow: hidden;
