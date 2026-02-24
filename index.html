@@ -23,13 +23,14 @@
               light: '#E0F2F7',
               DEFAULT: '#B8D4E3',
               deep: '#1A3638',
+              // deep: '#357A43',
               dark: '#0f2744',
             },
             brand: {
               green: '#1A3638',
               'green-dark': '#2d6b2e',
               'green-light': '#4CAF50',
-              orange: '#B07E4B',
+              orange: '#F47C2C',
               'orange-muted': '#c49a6c',
             },
           },
@@ -82,9 +83,9 @@
       <div class="flex-1 flex justify-start">
         <a href="#hero" class="flex items-center gap-2 shrink-0">
           <img src="/src/img/logo.png" alt="Classic Star Logo" class="w-10 h-10 sm:w-12 sm:h-12 object-contain">
-          <span class="flex flex-col items-start justify-center text-gray-700 text-lg sm:text-xl font-bold tracking-none whitespace-nowrap uppercase">
+          <span class="flex flex-col items-start justify-center text-sky-deep text-lg sm:text-xl font-bold tracking-none whitespace-nowrap uppercase">
             Classic Star 
-            <span class="text-[11px] sm:text-[12px] text-gray-400 tracking-widest -mt-2">
+            <span class="text-[11px] sm:text-[12px] text-brand-orange tracking-widest -mt-3">
               Home Maintenance llc
             </span>
           </span>
@@ -103,7 +104,7 @@
         <a href="#contact" class="inline-flex items-center justify-center text-brand-green border border-brand-green px-5 py-2 rounded-full text-sm font-medium hover:bg-brand-green hover:text-white transition-all whitespace-nowrap">
           Get a quote
         </a>
-        <a href="tel:+15745449743" class="inline-flex items-center justify-center gap-2 bg-brand-green text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-brand-green hover:text-white transition-all shadow-md active:scale-95 whitespace-nowrap">
+        <a href="tel:+15745449743" class="inline-flex items-center justify-center gap-2 bg-brand-orange text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-brand-green hover:text-white transition-all shadow-md active:scale-95 whitespace-nowrap">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
           Call now
         </a>
@@ -267,23 +268,22 @@
     <section id="services" class="scroll-mt-nav bg-white py-10 sm:py-12 md:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-8 sm:mb-12">
-          <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Our Services</p>
-          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-sky-deep leading-tight mb-3">We specialize in</h2>
+          <!-- <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Our Services</p> -->
+          <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-sky-deep leading-tight mb-3 max-w-3xl mx-auto">Find out services fit the needs of your project</h2>
           <p class="text-gray-500 text-sm sm:text-base max-w-2xl mx-auto px-0 sm:px-2">Skilled professionals · High-quality workmanship · Honest pricing · Reliable, on-time service · Commitment to customer satisfaction.</p>
         </div>
 
         <!-- Services: two-column layout with image + accordion -->
         <div class="reveal mt-10 sm:mt-14">
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-sky-deep mb-8 sm:mb-10 text-center lg:text-left max-w-3xl">Find out which of our services fit the needs of your project</h2>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <!-- Left: image -->
-            <div class="relative overflow-hidden rounded-2xl lg:order-1">
-              <img src="/src/img/homerepair-x.jpg" alt="Quality home maintenance and repair" class="w-full h-full min-h-[280px] sm:min-h-[360px] object-cover object-center" />
+            <div class="relative overflow-hidden rounded-2xl lg:order-1 h-[300px] sm:h-[400px] md:h-[500px]">
+              <img id="services-image" src="/src/img/services/IMG-20260223-WA0009.jpg" alt="Quality home maintenance and repair" class="w-full h-full object-cover object-center transition-all duration-300" />
             </div>
             <!-- Right: accordion -->
-            <div class="services-accordion border border-gray-200 rounded-2xl bg-white overflow-hidden shadow-sm lg:order-2">
-              <details class="border-b border-gray-200 last:border-b-0" open>
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+            <div class="services-accordion bg-white overflow-hidden shadow-sm lg:order-2">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" open data-image="/src/img/services/IMG-20260223-WA0017.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/paint.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>Interior &amp; Exterior Painting</span>
                 </summary>
@@ -291,8 +291,8 @@
                   <p class="text-gray-600 text-sm sm:text-base leading-relaxed">We deliver professional interior and exterior painting for walls, trim, and facades. Whether you want a fresh look or lasting protection, we use quality materials and careful prep so the job looks great and holds up.</p>
                 </div>
               </details>
-              <details class="border-b border-gray-200 last:border-b-0">
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" data-image="/src/img/services/IMG-20260223-WA0023.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/roof.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>Flooring Installation &amp; Repair</span>
                 </summary>
@@ -300,8 +300,8 @@
                   <p class="text-gray-600 text-sm sm:text-base leading-relaxed">Tile, vinyl, laminate, and hardwood—we install and repair all types of flooring. Our team ensures a level subfloor, clean cuts, and a finish that stands up to daily use.</p>
                 </div>
               </details>
-              <details class="border-b border-gray-200 last:border-b-0">
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" data-image="/src/img/services/IMG-20260223-WA0010.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/kitchen.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>Kitchen Installation &amp; Renovation</span>
                 </summary>
@@ -309,8 +309,8 @@
                   <p class="text-gray-600 text-sm sm:text-base leading-relaxed">At Classic Star, we design and build kitchens tailored to your style and needs. Whether you want a sleek modern space or a classic look, we deliver quality craftsmanship, functionality, and attention to detail to create the heart of your home.</p>
                 </div>
               </details>
-              <details class="border-b border-gray-200 last:border-b-0">
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" data-image="/src/img/services/IMG-20260223-WA0013.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/bathroom.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>Bathroom Remodeling</span>
                 </summary>
@@ -318,8 +318,8 @@
                   <p class="text-gray-600 text-sm sm:text-base leading-relaxed">From fixture updates to full remodels, we handle bathroom projects with care. We work with tile, plumbing, and finishes so your bathroom is functional, watertight, and easy to maintain.</p>
                 </div>
               </details>
-              <details class="border-b border-gray-200 last:border-b-0">
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" data-image="/src/img/services/IMG-20260223-WA0015.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/wall.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>Drywall Installation &amp; Repair</span>
                 </summary>
@@ -327,8 +327,8 @@
                   <p class="text-gray-600 text-sm sm:text-base leading-relaxed">We hang, patch, and finish drywall for new construction and repairs. Smooth seams and a clean finish mean your walls are ready for paint or wallpaper.</p>
                 </div>
               </details>
-              <details class="border-b border-gray-200 last:border-b-0">
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" data-image="/src/img/services/IMG-20260223-WA0009.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/plumbing.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>Plumbing &amp; Electrical</span>
                 </summary>
@@ -336,8 +336,8 @@
                   <p class="text-gray-600 text-sm sm:text-base leading-relaxed">We handle minor plumbing and electrical work as part of maintenance and renovations—fixes, fixture installs, and small upgrades. For larger or permitted work, we’ll point you in the right direction.</p>
                 </div>
               </details>
-              <details class="border-b border-gray-200 last:border-b-0">
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" data-image="/src/img/general.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/general.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>General Repairs &amp; Handyman</span>
                 </summary>
@@ -345,8 +345,8 @@
                   <p class="text-gray-600 text-sm sm:text-base leading-relaxed">From small fixes to larger projects, we tackle repairs and handyman work with the same quality and reliability. One call handles a long to‑do list so you can enjoy your home without the hassle.</p>
                 </div>
               </details>
-              <details class="border-b border-gray-200 last:border-b-0">
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" data-image="/src/img/office.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/office.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>Office &amp; Commercial Property Maintenance</span>
                 </summary>
@@ -354,8 +354,8 @@
                   <p class="text-gray-600 text-sm sm:text-base leading-relaxed">We keep office and commercial properties in good shape with routine maintenance, repairs, and small improvements. Dependable service so your business space stays safe and professional.</p>
                 </div>
               </details>
-              <details class="border-b border-gray-200 last:border-b-0">
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" data-image="/src/img/services/IMG-20260223-WA0021.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/maintainance.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>Preventive Maintenance Programs</span>
                 </summary>
@@ -363,8 +363,8 @@
                   <p class="text-gray-600 text-sm sm:text-base leading-relaxed">Scheduled inspections and upkeep help avoid costly surprises. We tailor a preventive plan to your property so systems and finishes last longer and small issues are caught early.</p>
                 </div>
               </details>
-              <details class="border-b border-gray-200 last:border-b-0">
-                <summary class="flex items-center gap-4 py-5 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors">
+              <details class="border-b border-gray-200 last:border-b-0 accordion-item" data-image="/src/img/services/IMG-20260223-WA0024.jpg">
+                <summary class="flex items-center gap-4 py-3 px-5 sm:px-6 text-left font-semibold text-sky-deep hover:bg-gray-50 transition-colors cursor-pointer">
                   <img src="src/svg/property.svg" class="w-8 h-8 shrink-0 object-contain" alt="" aria-hidden="true" />
                   <span>Property Make-Ready Services</span>
                 </summary>
@@ -382,7 +382,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 lg:gap-5">
           <!-- Block 1: Left tall card -->
           <div class="sm:col-span-2 relative overflow-hidden rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 min-h-[240px] sm:min-h-[280px] lg:min-h-[500px] group">
-            <img src="/src/img/homerepair-x.jpg" alt="Skilled technician" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src="/src/img/services/IMG-20260223-WA0007.jpg" alt="Skilled technician" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8">
               <p class="text-white text-base sm:text-lg md:text-xl font-bold leading-snug mb-3 sm:mb-4">Your dependable partner for maintaining, repairing, and improving your property—when it's done right the first time, you can trust it to last.</p>
@@ -421,14 +421,14 @@
               </div>
             </div>
             <div class="relative overflow-hidden rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 min-h-[200px] sm:min-h-[220px] group">
-              <img src="/src/img/paint.jpg" alt="Repairs and handyman" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src="/src/img/services/IMG-20260223-WA0021.jpg" alt="Repairs and handyman" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
               <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                 <p class="text-white font-bold text-base sm:text-lg">•	Reliable service  &amp; on-time completion</p>
               </div>
             </div>
             <div class="relative overflow-hidden rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 min-h-[200px] sm:min-h-[220px] group">
-              <img src="/src/img/paint.jpg" alt="Repairs and handyman" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src="/src/img/services/IMG-20260223-WA0016.jpg" alt="Repairs and handyman" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
               <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                 <p class="text-white font-bold text-base sm:text-lg">•	Commitment to customer satisfaction</p>
@@ -528,8 +528,9 @@
           
           <div class="absolute top-0 right-0 w-full lg:w-2/3 h-1/2 lg:h-full">
             <div class="absolute inset-0 bg-gradient-to-r from-sky-deep via-sky-deep/50 lg:via-transparent to-transparent z-10"></div>
+            <!-- src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1200&q=80"  -->
             <img 
-              src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1200&q=80" 
+              src="/src/img/services/IMG-20260223-WA0026.jpg" 
               alt="Painting work" 
               class="w-full h-full object-cover object-center opacity-60 lg:opacity-100"
             />
